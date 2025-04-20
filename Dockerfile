@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update && \
-    apt-get install -y curl busybox
+    apt-get install -y curl
 
 ARG FRP_VERSION=0.62.0
 
@@ -14,7 +14,7 @@ COPY config/frps.toml ./
 
 # Default token, MUST be changed
 ENV FRP_AUTH_TOKEN="GQuuuuuuuuuuuuuuuuuuuuuuuuuuX"
-EXPOSE 7000 8443 8080
+EXPOSE 7000 8443
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh

@@ -14,7 +14,7 @@ COPY config/frps.toml ./
 
 # Default token, MUST be changed
 ENV FRP_AUTH_TOKEN="GQuuuuuuuuuuuuuuuuuuuuuuuuuuX"
-EXPOSE 7000 8443
+EXPOSE 7000 8443 8080
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh

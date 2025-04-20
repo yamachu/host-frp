@@ -1,5 +1,6 @@
 bindPort = 7000
 vhostHTTPSPort = 8443
+vhostHTTPPort = 8080
 
 auth.method = "token"
 auth.token = "{{ .Envs.FRP_AUTH_TOKEN }}"

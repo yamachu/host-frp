@@ -1,3 +1,4 @@
-includes = ["./auth.toml"]
-
 bindPort = 7000
+
+auth.method = "token"
+auth.token = "{{ .Envs.FRP_AUTH_TOKEN }}"

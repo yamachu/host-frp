@@ -14,5 +14,6 @@ COPY config/frps.toml config/auth.toml ./
 
 # Default token, MUST be changed
 ENV FRP_AUTH_TOKEN="GQuuuuuuuuuuuuuuuuuuuuuuuuuuX"
+EXPOSE 7000 8443
 
 CMD ["./frps", "-c", "frps.toml"]

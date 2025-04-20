@@ -10,7 +10,7 @@ RUN tar -zxvf frp.tar.gz && \
     mv frp_${FRP_VERSION}_linux_arm64/frps ./frps && \
     rm -rf frp_${FRP_VERSION}_linux_arm64 frp.tar.gz
 
-COPY config/frps.toml config/auth.toml ./
+COPY config/frps.toml ./
 
 # Default token, MUST be changed
 ENV FRP_AUTH_TOKEN="GQuuuuuuuuuuuuuuuuuuuuuuuuuuX"

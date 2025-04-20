@@ -1,0 +1,2 @@
+auth.method = "token"
+auth.token = "{{ .Envs.FRP_AUTH_TOKEN }}"
